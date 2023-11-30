@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Nama HTML</title>
+</head>
+<body>
+
+<!-- Formulir untuk memasukkan nama -->
+<form id="namaForm">
+    <label for="nama">Nama:</label>
+    <input type="text" id="nama" name="nama" required>
+    <input type="button" value="Submit" onclick="tampilkanSambutan()">
+</form>
+
+<!-- Pesan sambutan -->
+<div id="sambutan"></div>
+
+<script>
+    function tampilkanSambutan() {
+        var nama = document.getElementById("nama").value;
+        document.getElementById("sambutan").innerHTML = "Halo, " + nama + "! Selamat datang!";
+    }
+</script>
+
+</body>
+</html>
